@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0512C5C429E708C2004F3348 /* ModelAttributeWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0512C5C129E708C2004F3348 /* ModelAttributeWrapper.h */; };
+		0512C5C529E708C2004F3348 /* ModelAttributeWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0512C5C229E708C2004F3348 /* ModelAttributeWrapper.mm */; };
+		0512C5C629E708C2004F3348 /* ModelAttributeWrapper+.h in Headers */ = {isa = PBXBuildFile; fileRef = 0512C5C329E708C2004F3348 /* ModelAttributeWrapper+.h */; };
+		0512C5D729E74490004F3348 /* ModelMetadataWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0512C5D429E74490004F3348 /* ModelMetadataWrapper.h */; };
+		0512C5D829E74490004F3348 /* ModelMetadataWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0512C5D529E74490004F3348 /* ModelMetadataWrapper.mm */; };
+		0512C5D929E74490004F3348 /* ModelMetadataWrapper+.h in Headers */ = {isa = PBXBuildFile; fileRef = 0512C5D629E74490004F3348 /* ModelMetadataWrapper+.h */; };
+		0554262E2A7ED70400E678D1 /* ModelColorWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0554262B2A7ED70400E678D1 /* ModelColorWrapper.h */; };
+		0554262F2A7ED70400E678D1 /* ModelColorWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0554262C2A7ED70400E678D1 /* ModelColorWrapper.mm */; };
+		055426302A7ED70400E678D1 /* ModelColorWrapper+.h in Headers */ = {isa = PBXBuildFile; fileRef = 0554262D2A7ED70400E678D1 /* ModelColorWrapper+.h */; };
+		0554264A2A8D6B1400E678D1 /* ModelUnitWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 055426472A8D6B1400E678D1 /* ModelUnitWrapper.h */; };
+		0554264B2A8D6B1400E678D1 /* ModelUnitWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 055426482A8D6B1400E678D1 /* ModelUnitWrapper.mm */; };
+		0554264C2A8D6B1400E678D1 /* ModelUnitWrapper+.h in Headers */ = {isa = PBXBuildFile; fileRef = 055426492A8D6B1400E678D1 /* ModelUnitWrapper+.h */; };
+		055F1CD429BEB0F10004F966 /* ModelElementWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 055F1CB829BEB03B0004F966 /* ModelElementWrapper.mm */; };
+		055F1CD529BEB0F10004F966 /* ModelMeshWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 055F1CBB29BEB03B0004F966 /* ModelMeshWrapper.mm */; };
+		055F1CD629BEB0F10004F966 /* ModelVolumeWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 055F1CBD29BEB03B0004F966 /* ModelVolumeWrapper.mm */; };
+		055F1CD729BEB0F10004F966 /* ModelNodeWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 055F1CBA29BEB03B0004F966 /* ModelNodeWrapper.mm */; };
+		055F1CD829BEB0F10004F966 /* ModelObjectWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 055F1CBC29BEB03B0004F966 /* ModelObjectWrapper.mm */; };
+		055F1CD929BEB0F10004F966 /* ModelRootWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 055F1CC129BEB03B0004F966 /* ModelRootWrapper.mm */; };
+		055F1CDA29BEB0F60004F966 /* DocumentReaderWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 055F1CC529BEB03B0004F966 /* DocumentReaderWrapper.mm */; };
+		055F1CDB29BEB0FA0004F966 /* AMFWrapped.mm in Sources */ = {isa = PBXBuildFile; fileRef = 055F1CC729BEB03B0004F966 /* AMFWrapped.mm */; };
+		05AB2E1A29CBE56400752833 /* ModelVertexWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 05AB2E1729CBE56400752833 /* ModelVertexWrapper.h */; };
+		05AB2E1B29CBE56400752833 /* ModelVertexWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 05AB2E1829CBE56400752833 /* ModelVertexWrapper.mm */; };
+		05AB2E1C29CBE56400752833 /* ModelVertexWrapper+.h in Headers */ = {isa = PBXBuildFile; fileRef = 05AB2E1929CBE56400752833 /* ModelVertexWrapper+.h */; };
+		05AB2E2529CC0E1F00752833 /* ModelTriangleWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 05AB2E2229CC0E1F00752833 /* ModelTriangleWrapper.h */; };
+		05AB2E2629CC0E1F00752833 /* ModelTriangleWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 05AB2E2329CC0E1F00752833 /* ModelTriangleWrapper.mm */; };
+		05AB2E2729CC0E1F00752833 /* ModelTriangleWrapper+.h in Headers */ = {isa = PBXBuildFile; fileRef = 05AB2E2429CC0E1F00752833 /* ModelTriangleWrapper+.h */; };
+		05E1DC632AD530FB0065A129 /* DocumentWriterWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E1DC602AD530FB0065A129 /* DocumentWriterWrapper.h */; };
+		05E1DC642AD530FB0065A129 /* DocumentWriterWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 05E1DC612AD530FB0065A129 /* DocumentWriterWrapper.mm */; };
+		05E1DC652AD530FB0065A129 /* DocumentWriterWrapper+.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E1DC622AD530FB0065A129 /* DocumentWriterWrapper+.h */; };
+		05E1DCA42AD718190065A129 /* BufferWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E1DCA12AD718190065A129 /* BufferWrapper.h */; };
+		05E1DCA52AD718190065A129 /* BufferWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 05E1DCA22AD718190065A129 /* BufferWrapper.mm */; };
+		05E1DCA62AD718190065A129 /* BufferWrapper+.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E1DCA32AD718190065A129 /* BufferWrapper+.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05ACDD0A29BEB2BC002D87D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05ACDD0329BEB2BC002D87D5 /* AMFCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 055F1B9529BEA13D0004F966;
+			remoteInfo = AMFCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0512C5C129E708C2004F3348 /* ModelAttributeWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelAttributeWrapper.h; sourceTree = "<group>"; };
+		0512C5C229E708C2004F3348 /* ModelAttributeWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelAttributeWrapper.mm; sourceTree = "<group>"; };
+		0512C5C329E708C2004F3348 /* ModelAttributeWrapper+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModelAttributeWrapper+.h"; sourceTree = "<group>"; };
+		0512C5D429E74490004F3348 /* ModelMetadataWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelMetadataWrapper.h; sourceTree = "<group>"; };
+		0512C5D529E74490004F3348 /* ModelMetadataWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelMetadataWrapper.mm; sourceTree = "<group>"; };
+		0512C5D629E74490004F3348 /* ModelMetadataWrapper+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModelMetadataWrapper+.h"; sourceTree = "<group>"; };
+		054263F12BCF5A6E00F35189 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		054263F32BCF5A9000F35189 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		054263F42BCF5AA600F35189 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		0554262B2A7ED70400E678D1 /* ModelColorWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelColorWrapper.h; sourceTree = "<group>"; };
+		0554262C2A7ED70400E678D1 /* ModelColorWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelColorWrapper.mm; sourceTree = "<group>"; };
+		0554262D2A7ED70400E678D1 /* ModelColorWrapper+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModelColorWrapper+.h"; sourceTree = "<group>"; };
+		055426472A8D6B1400E678D1 /* ModelUnitWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelUnitWrapper.h; sourceTree = "<group>"; };
+		055426482A8D6B1400E678D1 /* ModelUnitWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelUnitWrapper.mm; sourceTree = "<group>"; };
+		055426492A8D6B1400E678D1 /* ModelUnitWrapper+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModelUnitWrapper+.h"; sourceTree = "<group>"; };
+		055F1C9C29BEB0220004F966 /* libAMFWrapped.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAMFWrapped.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		055F1CA929BEB03B0004F966 /* AMFWrapped.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMFWrapped.h; sourceTree = "<group>"; };
+		055F1CB129BEB03B0004F966 /* ModelNodeWrapper+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModelNodeWrapper+.h"; sourceTree = "<group>"; };
+		055F1CB229BEB03B0004F966 /* ModelObjectWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelObjectWrapper.h; sourceTree = "<group>"; };
+		055F1CB329BEB03B0004F966 /* ModelElementWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelElementWrapper.h; sourceTree = "<group>"; };
+		055F1CB429BEB03B0004F966 /* ModelNodeWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelNodeWrapper.h; sourceTree = "<group>"; };
+		055F1CB529BEB03B0004F966 /* ModelElementWrapper+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModelElementWrapper+.h"; sourceTree = "<group>"; };
+		055F1CB629BEB03B0004F966 /* ModelObjectWrapper+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModelObjectWrapper+.h"; sourceTree = "<group>"; };
+		055F1CB729BEB03B0004F966 /* ModelMeshWrapper+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModelMeshWrapper+.h"; sourceTree = "<group>"; };
+		055F1CB829BEB03B0004F966 /* ModelElementWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelElementWrapper.mm; sourceTree = "<group>"; };
+		055F1CB929BEB03B0004F966 /* ModelVolumeWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelVolumeWrapper.h; sourceTree = "<group>"; };
+		055F1CBA29BEB03B0004F966 /* ModelNodeWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelNodeWrapper.mm; sourceTree = "<group>"; };
+		055F1CBB29BEB03B0004F966 /* ModelMeshWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelMeshWrapper.mm; sourceTree = "<group>"; };
+		055F1CBC29BEB03B0004F966 /* ModelObjectWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelObjectWrapper.mm; sourceTree = "<group>"; };
+		055F1CBD29BEB03B0004F966 /* ModelVolumeWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelVolumeWrapper.mm; sourceTree = "<group>"; };
+		055F1CBE29BEB03B0004F966 /* ModelRootWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelRootWrapper.h; sourceTree = "<group>"; };
+		055F1CBF29BEB03B0004F966 /* ModelRootWrapper+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModelRootWrapper+.h"; sourceTree = "<group>"; };
+		055F1CC029BEB03B0004F966 /* ModelVolumeWrapper+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModelVolumeWrapper+.h"; sourceTree = "<group>"; };
+		055F1CC129BEB03B0004F966 /* ModelRootWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelRootWrapper.mm; sourceTree = "<group>"; };
+		055F1CC229BEB03B0004F966 /* ModelMeshWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelMeshWrapper.h; sourceTree = "<group>"; };
+		055F1CC429BEB03B0004F966 /* DocumentReaderWrapper+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DocumentReaderWrapper+.h"; sourceTree = "<group>"; };
+		055F1CC529BEB03B0004F966 /* DocumentReaderWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DocumentReaderWrapper.mm; sourceTree = "<group>"; };
+		055F1CC629BEB03B0004F966 /* DocumentReaderWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentReaderWrapper.h; sourceTree = "<group>"; };
+		055F1CC729BEB03B0004F966 /* AMFWrapped.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AMFWrapped.mm; sourceTree = "<group>"; };
+		05AB2E1729CBE56400752833 /* ModelVertexWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelVertexWrapper.h; sourceTree = "<group>"; };
+		05AB2E1829CBE56400752833 /* ModelVertexWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelVertexWrapper.mm; sourceTree = "<group>"; };
+		05AB2E1929CBE56400752833 /* ModelVertexWrapper+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModelVertexWrapper+.h"; sourceTree = "<group>"; };
+		05AB2E2229CC0E1F00752833 /* ModelTriangleWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelTriangleWrapper.h; sourceTree = "<group>"; };
+		05AB2E2329CC0E1F00752833 /* ModelTriangleWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelTriangleWrapper.mm; sourceTree = "<group>"; };
+		05AB2E2429CC0E1F00752833 /* ModelTriangleWrapper+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModelTriangleWrapper+.h"; sourceTree = "<group>"; };
+		05ACDD0329BEB2BC002D87D5 /* AMFCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AMFCore.xcodeproj; path = ../AMFCore/AMFCore.xcodeproj; sourceTree = "<group>"; };
+		05E1DC602AD530FB0065A129 /* DocumentWriterWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentWriterWrapper.h; sourceTree = "<group>"; };
+		05E1DC612AD530FB0065A129 /* DocumentWriterWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DocumentWriterWrapper.mm; sourceTree = "<group>"; };
+		05E1DC622AD530FB0065A129 /* DocumentWriterWrapper+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DocumentWriterWrapper+.h"; sourceTree = "<group>"; };
+		05E1DCA12AD718190065A129 /* BufferWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BufferWrapper.h; sourceTree = "<group>"; };
+		05E1DCA22AD718190065A129 /* BufferWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BufferWrapper.mm; sourceTree = "<group>"; };
+		05E1DCA32AD718190065A129 /* BufferWrapper+.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BufferWrapper+.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		055F1C9A29BEB0220004F966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		055426292A7ED6DA00E678D1 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				0554262B2A7ED70400E678D1 /* ModelColorWrapper.h */,
+				0554262C2A7ED70400E678D1 /* ModelColorWrapper.mm */,
+				0554262D2A7ED70400E678D1 /* ModelColorWrapper+.h */,
+			);
+			name = Color;
+			sourceTree = "<group>";
+		};
+		0554264D2A8D6B1B00E678D1 /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				055426472A8D6B1400E678D1 /* ModelUnitWrapper.h */,
+				055426482A8D6B1400E678D1 /* ModelUnitWrapper.mm */,
+				055426492A8D6B1400E678D1 /* ModelUnitWrapper+.h */,
+			);
+			name = Unit;
+			sourceTree = "<group>";
+		};
+		055F1C9329BEB0220004F966 = {
+			isa = PBXGroup;
+			children = (
+				054263F12BCF5A6E00F35189 /* .gitignore */,
+				054263F32BCF5A9000F35189 /* README.md */,
+				054263F42BCF5AA600F35189 /* LICENSE.md */,
+				055F1CA829BEB03B0004F966 /* AMFWrapped */,
+				05ACDD0329BEB2BC002D87D5 /* AMFCore.xcodeproj */,
+				055F1C9D29BEB0220004F966 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		055F1C9D29BEB0220004F966 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				055F1C9C29BEB0220004F966 /* libAMFWrapped.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		055F1CA829BEB03B0004F966 /* AMFWrapped */ = {
+			isa = PBXGroup;
+			children = (
+				055F1CA929BEB03B0004F966 /* AMFWrapped.h */,
+				055F1CC729BEB03B0004F966 /* AMFWrapped.mm */,
+				055F1CB029BEB03B0004F966 /* Model */,
+				055F1CC329BEB03B0004F966 /* Readers */,
+				05E1DC5E2AD530D20065A129 /* Writers */,
+			);
+			path = AMFWrapped;
+			sourceTree = "<group>";
+		};
+		055F1CB029BEB03B0004F966 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				058D81C32A2FEDC500808063 /* Node */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		055F1CC329BEB03B0004F966 /* Readers */ = {
+			isa = PBXGroup;
+			children = (
+				055F1CC429BEB03B0004F966 /* DocumentReaderWrapper+.h */,
+				055F1CC529BEB03B0004F966 /* DocumentReaderWrapper.mm */,
+				055F1CC629BEB03B0004F966 /* DocumentReaderWrapper.h */,
+			);
+			path = Readers;
+			sourceTree = "<group>";
+		};
+		058D81C32A2FEDC500808063 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				055F1CB429BEB03B0004F966 /* ModelNodeWrapper.h */,
+				055F1CB129BEB03B0004F966 /* ModelNodeWrapper+.h */,
+				055F1CBA29BEB03B0004F966 /* ModelNodeWrapper.mm */,
+				058D81CD2A2FEF1C00808063 /* Attribute */,
+				058D81C42A2FEDE000808063 /* Element */,
+			);
+			name = Node;
+			sourceTree = "<group>";
+		};
+		058D81C42A2FEDE000808063 /* Element */ = {
+			isa = PBXGroup;
+			children = (
+				055F1CB329BEB03B0004F966 /* ModelElementWrapper.h */,
+				055F1CB529BEB03B0004F966 /* ModelElementWrapper+.h */,
+				055F1CB829BEB03B0004F966 /* ModelElementWrapper.mm */,
+				055426292A7ED6DA00E678D1 /* Color */,
+				058D81CE2A2FEF3200808063 /* Metadata */,
+				058D81C72A2FEE6200808063 /* Root */,
+			);
+			name = Element;
+			sourceTree = "<group>";
+		};
+		058D81C52A2FEE0900808063 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				055F1CB229BEB03B0004F966 /* ModelObjectWrapper.h */,
+				055F1CB629BEB03B0004F966 /* ModelObjectWrapper+.h */,
+				055F1CBC29BEB03B0004F966 /* ModelObjectWrapper.mm */,
+				058D81C62A2FEE2E00808063 /* Mesh */,
+			);
+			name = Object;
+			sourceTree = "<group>";
+		};
+		058D81C62A2FEE2E00808063 /* Mesh */ = {
+			isa = PBXGroup;
+			children = (
+				055F1CC229BEB03B0004F966 /* ModelMeshWrapper.h */,
+				055F1CB729BEB03B0004F966 /* ModelMeshWrapper+.h */,
+				055F1CBB29BEB03B0004F966 /* ModelMeshWrapper.mm */,
+				058D81CB2A2FEEE200808063 /* Vertex */,
+				058D81CA2A2FEEDA00808063 /* Volume */,
+			);
+			name = Mesh;
+			sourceTree = "<group>";
+		};
+		058D81C72A2FEE6200808063 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				055F1CBE29BEB03B0004F966 /* ModelRootWrapper.h */,
+				055F1CBF29BEB03B0004F966 /* ModelRootWrapper+.h */,
+				055F1CC129BEB03B0004F966 /* ModelRootWrapper.mm */,
+				058D81C52A2FEE0900808063 /* Object */,
+				058D81C82A2FEE9700808063 /* Material */,
+				058D81C92A2FEE9F00808063 /* Constellation */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		058D81C82A2FEE9700808063 /* Material */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Material;
+			sourceTree = "<group>";
+		};
+		058D81C92A2FEE9F00808063 /* Constellation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Constellation;
+			sourceTree = "<group>";
+		};
+		058D81CA2A2FEEDA00808063 /* Volume */ = {
+			isa = PBXGroup;
+			children = (
+				055F1CB929BEB03B0004F966 /* ModelVolumeWrapper.h */,
+				055F1CC029BEB03B0004F966 /* ModelVolumeWrapper+.h */,
+				055F1CBD29BEB03B0004F966 /* ModelVolumeWrapper.mm */,
+				058D81CC2A2FEEF800808063 /* Triangle */,
+			);
+			name = Volume;
+			sourceTree = "<group>";
+		};
+		058D81CB2A2FEEE200808063 /* Vertex */ = {
+			isa = PBXGroup;
+			children = (
+				05AB2E1729CBE56400752833 /* ModelVertexWrapper.h */,
+				05AB2E1829CBE56400752833 /* ModelVertexWrapper.mm */,
+				05AB2E1929CBE56400752833 /* ModelVertexWrapper+.h */,
+			);
+			name = Vertex;
+			sourceTree = "<group>";
+		};
+		058D81CC2A2FEEF800808063 /* Triangle */ = {
+			isa = PBXGroup;
+			children = (
+				05AB2E2229CC0E1F00752833 /* ModelTriangleWrapper.h */,
+				05AB2E2329CC0E1F00752833 /* ModelTriangleWrapper.mm */,
+				05AB2E2429CC0E1F00752833 /* ModelTriangleWrapper+.h */,
+			);
+			name = Triangle;
+			sourceTree = "<group>";
+		};
+		058D81CD2A2FEF1C00808063 /* Attribute */ = {
+			isa = PBXGroup;
+			children = (
+				0512C5C129E708C2004F3348 /* ModelAttributeWrapper.h */,
+				0512C5C329E708C2004F3348 /* ModelAttributeWrapper+.h */,
+				0512C5C229E708C2004F3348 /* ModelAttributeWrapper.mm */,
+				0554264D2A8D6B1B00E678D1 /* Unit */,
+			);
+			name = Attribute;
+			sourceTree = "<group>";
+		};
+		058D81CE2A2FEF3200808063 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				0512C5D429E74490004F3348 /* ModelMetadataWrapper.h */,
+				0512C5D629E74490004F3348 /* ModelMetadataWrapper+.h */,
+				0512C5D529E74490004F3348 /* ModelMetadataWrapper.mm */,
+			);
+			name = Metadata;
+			sourceTree = "<group>";
+		};
+		05ACDD0429BEB2BC002D87D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05ACDD0B29BEB2BC002D87D5 /* libAMFCore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05E1DC5E2AD530D20065A129 /* Writers */ = {
+			isa = PBXGroup;
+			children = (
+				05E1DC602AD530FB0065A129 /* DocumentWriterWrapper.h */,
+				05E1DC612AD530FB0065A129 /* DocumentWriterWrapper.mm */,
+				05E1DC622AD530FB0065A129 /* DocumentWriterWrapper+.h */,
+				05E1DCA12AD718190065A129 /* BufferWrapper.h */,
+				05E1DCA22AD718190065A129 /* BufferWrapper.mm */,
+				05E1DCA32AD718190065A129 /* BufferWrapper+.h */,
+			);
+			path = Writers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		055F1C9829BEB0220004F966 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0554262E2A7ED70400E678D1 /* ModelColorWrapper.h in Headers */,
+				0512C5C429E708C2004F3348 /* ModelAttributeWrapper.h in Headers */,
+				055426302A7ED70400E678D1 /* ModelColorWrapper+.h in Headers */,
+				0512C5D729E74490004F3348 /* ModelMetadataWrapper.h in Headers */,
+				05E1DCA42AD718190065A129 /* BufferWrapper.h in Headers */,
+				05E1DC652AD530FB0065A129 /* DocumentWriterWrapper+.h in Headers */,
+				05E1DC632AD530FB0065A129 /* DocumentWriterWrapper.h in Headers */,
+				05AB2E2729CC0E1F00752833 /* ModelTriangleWrapper+.h in Headers */,
+				0512C5D929E74490004F3348 /* ModelMetadataWrapper+.h in Headers */,
+				05AB2E2529CC0E1F00752833 /* ModelTriangleWrapper.h in Headers */,
+				0512C5C629E708C2004F3348 /* ModelAttributeWrapper+.h in Headers */,
+				0554264A2A8D6B1400E678D1 /* ModelUnitWrapper.h in Headers */,
+				05E1DCA62AD718190065A129 /* BufferWrapper+.h in Headers */,
+				05AB2E1C29CBE56400752833 /* ModelVertexWrapper+.h in Headers */,
+				0554264C2A8D6B1400E678D1 /* ModelUnitWrapper+.h in Headers */,
+				05AB2E1A29CBE56400752833 /* ModelVertexWrapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		055F1C9B29BEB0220004F966 /* AMFWrapped */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 055F1CA529BEB0220004F966 /* Build configuration list for PBXNativeTarget "AMFWrapped" */;
+			buildPhases = (
+				055F1C9829BEB0220004F966 /* Headers */,
+				055F1C9929BEB0220004F966 /* Sources */,
+				055F1C9A29BEB0220004F966 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMFWrapped;
+			productName = AMFWrapped;
+			productReference = 055F1C9C29BEB0220004F966 /* libAMFWrapped.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		055F1C9429BEB0220004F966 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					055F1C9B29BEB0220004F966 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 055F1C9729BEB0220004F966 /* Build configuration list for PBXProject "AMFWrapped" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 055F1C9329BEB0220004F966;
+			productRefGroup = 055F1C9D29BEB0220004F966 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 05ACDD0429BEB2BC002D87D5 /* Products */;
+					ProjectRef = 05ACDD0329BEB2BC002D87D5 /* AMFCore.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				055F1C9B29BEB0220004F966 /* AMFWrapped */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		05ACDD0B29BEB2BC002D87D5 /* libAMFCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAMFCore.a;
+			remoteRef = 05ACDD0A29BEB2BC002D87D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		055F1C9929BEB0220004F966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				055F1CD929BEB0F10004F966 /* ModelRootWrapper.mm in Sources */,
+				055F1CD429BEB0F10004F966 /* ModelElementWrapper.mm in Sources */,
+				05AB2E2629CC0E1F00752833 /* ModelTriangleWrapper.mm in Sources */,
+				05E1DCA52AD718190065A129 /* BufferWrapper.mm in Sources */,
+				0554264B2A8D6B1400E678D1 /* ModelUnitWrapper.mm in Sources */,
+				055F1CD829BEB0F10004F966 /* ModelObjectWrapper.mm in Sources */,
+				055F1CDA29BEB0F60004F966 /* DocumentReaderWrapper.mm in Sources */,
+				05E1DC642AD530FB0065A129 /* DocumentWriterWrapper.mm in Sources */,
+				0554262F2A7ED70400E678D1 /* ModelColorWrapper.mm in Sources */,
+				0512C5C529E708C2004F3348 /* ModelAttributeWrapper.mm in Sources */,
+				0512C5D829E74490004F3348 /* ModelMetadataWrapper.mm in Sources */,
+				055F1CD529BEB0F10004F966 /* ModelMeshWrapper.mm in Sources */,
+				055F1CD629BEB0F10004F966 /* ModelVolumeWrapper.mm in Sources */,
+				055F1CDB29BEB0FA0004F966 /* AMFWrapped.mm in Sources */,
+				05AB2E1B29CBE56400752833 /* ModelVertexWrapper.mm in Sources */,
+				055F1CD729BEB0F10004F966 /* ModelNodeWrapper.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		055F1CA329BEB0220004F966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		055F1CA429BEB0220004F966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		055F1CA629BEB0220004F966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6E8HN7533X;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "../AMFCore/AMFCore/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		055F1CA729BEB0220004F966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6E8HN7533X;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "../AMFCore/AMFCore/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		055F1C9729BEB0220004F966 /* Build configuration list for PBXProject "AMFWrapped" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				055F1CA329BEB0220004F966 /* Debug */,
+				055F1CA429BEB0220004F966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		055F1CA529BEB0220004F966 /* Build configuration list for PBXNativeTarget "AMFWrapped" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				055F1CA629BEB0220004F966 /* Debug */,
+				055F1CA729BEB0220004F966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 055F1C9429BEB0220004F966 /* Project object */;
+}
